@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+
+
 [Flags]
 public enum FalTulajdonsagok
 {
@@ -28,10 +30,10 @@ public struct Neighbour
     public FalTulajdonsagok KozosFal;
 }
 
-public static class MazeGenerator
+public class MazeGenerator : MonoBehaviour
 {
 
-    private static FalTulajdonsagok GetOppositeWall(FalTulajdonsagok fal)
+    public static FalTulajdonsagok GetOppositeWall(FalTulajdonsagok fal)
     {
         switch (fal)
         {
@@ -43,7 +45,7 @@ public static class MazeGenerator
         }
     }
 
-    private static FalTulajdonsagok[,] ApplyRecursiveBacktracker(FalTulajdonsagok[,] labirintus, int width, int height)
+    public static FalTulajdonsagok[,] ApplyRecursiveBacktracker(FalTulajdonsagok[,] labirintus, int width, int height)
     {
         var RandomSzG = new System.Random();
         var PozicioVerem = new Stack<Pozicio>();
@@ -76,7 +78,7 @@ public static class MazeGenerator
         return labirintus;
     }
 
-    private static List<Neighbour> GetUnvisitedNeighbours(Pozicio p, FalTulajdonsagok[,] labirintus, int width, int height)
+    public static List<Neighbour> GetUnvisitedNeighbours(Pozicio p, FalTulajdonsagok[,] labirintus, int width, int height)
     {
         var listazas = new List<Neighbour>();
 

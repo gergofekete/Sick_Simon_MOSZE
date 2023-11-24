@@ -311,14 +311,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 672155951}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32743fc8e44008e428ca7e0b71c1f741, type: 3}
+  m_Script: {fileID: 11500000, guid: 338061282e929384da29bca7f6bd4ad4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   width: 10
   height: 10
   size: 1
-  wallPrefab: {fileID: 8082400858537166671, guid: 6c2ed6803af167949a6f8ab266a56a64, type: 3}
-  floorPrefab: {fileID: 6845525182443694316, guid: e1fe12f61d4c0454bbc1312a6cadbdc8, type: 3}
+  wallPrefab: {fileID: 8082400858537166671, guid: 4007360377724b14cad7b83eb6340a89, type: 3}
+  floorPrefab: {fileID: 6845525182443694316, guid: 0f50785ba3b9d964d912be9cd6c8d99f, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemPrefab: {fileID: 6915329289702207308, guid: 7a65740ebe14ac240aea7432f4c91e75, type: 3}
-  itemCount: 4
+  itemCount: 6
   mazeWidth: 10
   mazeHeight: 10
 --- !u!4 &922327798

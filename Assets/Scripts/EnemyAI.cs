@@ -40,12 +40,12 @@ public class EnemyAI : MonoBehaviour
         };
 
         moveDirection = possibleDirections[Random.Range(0, possibleDirections.Count)];
-        transform.LookAt(transform.position + moveDirection); // Az ellenség nézzen az új irányba
+        transform.LookAt(transform.position + moveDirection); // Az ellensï¿½g nï¿½zzen az ï¿½j irï¿½nyba
     }
 
     void OnCollisionEnter(Collision collision)
     {
-        // Ha falnak ütközik, válasszon új irányt
+        // Ha falnak ï¿½tkï¿½zik, vï¿½lasszon ï¿½j irï¿½nyt
         if (collision.gameObject.CompareTag("Wall"))
         {
             ChooseNewDirection();
