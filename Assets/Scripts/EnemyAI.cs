@@ -5,6 +5,7 @@ public class EnemyAI : MonoBehaviour
 {
     public float moveSpeed = 2.0f;
     public float decisionDelay = 2.0f;
+    public float raycastDistance = 2.0f;
     private Vector3 moveDirection;
     private float timer;
 
@@ -16,7 +17,7 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer > decisionDelay)
+        if (timer > decisionDelay || IsPathBlocked())
         {
             ChooseNewDirection();
             timer = 0;
@@ -25,8 +26,18 @@ public class EnemyAI : MonoBehaviour
 
     void FixedUpdate()
     {
-        Rigidbody rb = GetComponent<Rigidbody>();
-        rb.MovePosition(transform.position + moveDirection * moveSpeed * Time.fixedDeltaTime);
+        transform.Translate(moveDirection * moveSpeed * Time.fixedDeltaTime);
+    }
+
+    bool IsPathBlocked()
+    {
+        RaycastHit hit;
+        // Raycast elõre az ellenség mozgási irányában
+        if (Physics.Raycast(transform.position, moveDirection, out hit, raycastDistance))
+        {
+            return hit.collider.CompareTag("Wall");
+        }
+        return false;
     }
 
     void ChooseNewDirection()
@@ -39,13 +50,16 @@ public class EnemyAI : MonoBehaviour
             Vector3.right
         };
 
-        moveDirection = possibleDirections[Random.Range(0, possibleDirections.Count)];
-        transform.LookAt(transform.position + moveDirection); // Az ellensï¿½g nï¿½zzen az ï¿½j irï¿½nyba
+        do
+        {
+            moveDirection = possibleDirections[Random.Range(0, possibleDirections.Count)];
+        } while (IsPathBlocked());
+
+        transform.LookAt(transform.position + moveDirection); // Az ellenség nézzen az új irányba
     }
 
     void OnCollisionEnter(Collision collision)
     {
-        // Ha falnak ï¿½tkï¿½zik, vï¿½lasszon ï¿½j irï¿½nyt
         if (collision.gameObject.CompareTag("Wall"))
         {
             ChooseNewDirection();

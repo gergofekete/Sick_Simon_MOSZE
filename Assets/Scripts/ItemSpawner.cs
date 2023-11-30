@@ -4,7 +4,10 @@ using System.Collections.Generic;
 public class ItemSpawner : MonoBehaviour
 {
     public GameObject itemPrefab;
-    public int itemCount = 4;
+    public GameObject itemPrefab2;
+    public GameObject itemPrefab3;
+    public GameObject itemPrefab4;
+    public int itemCount =6;
     public int mazeWidth = 10;
     public int mazeHeight = 10;
 
@@ -27,8 +30,33 @@ public class ItemSpawner : MonoBehaviour
             Pozicio cell = freeCells[randomIndex];
             freeCells.RemoveAt(randomIndex);
 
+            GameObject selectedPrefab;
+
+            if (i < 1)
+            {
+                selectedPrefab = itemPrefab;
+            } else if(i<3)
+            {
+                selectedPrefab = itemPrefab2;
+            } else if(i<5)
+            {
+                selectedPrefab = itemPrefab3;
+            }
+            else if(i<6)
+            {
+                selectedPrefab = itemPrefab4;
+            }
+            else
+            {
+                selectedPrefab = itemPrefab;
+            }
+
+            //GameObject selectedPrefab = i < itemsToSpawn / 2 ? itemPrefab : itemPrefab2;
+
+            selectedPrefab.tag = "item";
+
             Vector3 spawnPosition = new Vector3(cell.X - mazeWidth / 2, 0.15f, cell.Y - mazeHeight / 2);
-            Instantiate(itemPrefab, spawnPosition, Quaternion.identity);
+            Instantiate(selectedPrefab, spawnPosition, Quaternion.identity);
         }
     }
 
