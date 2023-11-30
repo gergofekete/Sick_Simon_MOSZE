@@ -1,0 +1,14 @@
+.lable-main-title {
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    -unity-text-align: upper-center;
+    white-space: normal;
+    align-items: auto;
+    justify-content: flex-start;
+    -unity-font-style: normal;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    align-self: auto;
+}
