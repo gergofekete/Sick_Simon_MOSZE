@@ -5,15 +5,15 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float sebesseg = 1.5f;
-    private int felvettItemekSzama = 0; // Számláló az felvett itemek számához
-    private int itemCount = 0; // Számláló az itemek számára
+    private int felvettItemekSzama = 0; 
+    private int itemCount = 0; 
 
     public void PickUpItem(GameObject item)
     {
-        // Itt írd meg, mit kell tenni, amikor a játékos felvette az itemet
+        
         Debug.Log("Item felvéve: " + item.name);
 
-        // Növeld a felvett itemek számát
+        
         felvettItemekSzama++;
         Debug.Log("Felvett itemek száma: " + felvettItemekSzama);
     }
