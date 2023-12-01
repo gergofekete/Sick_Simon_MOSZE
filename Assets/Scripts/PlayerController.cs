@@ -22,6 +22,15 @@ public class PlayerController : MonoBehaviour
         itemCount++;
         Debug.Log("Itemek száma: " + itemCount);
     }
+    public int GetPickedUpItemCount()
+    {
+        return felvettItemekSzama;
+    }
+
+    public int GetTotalItemCount()
+    {
+        return itemCount;
+    }
 
     void Update()
     {
