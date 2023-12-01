@@ -14,7 +14,7 @@ public class EnemySpawner : MonoBehaviour
         SpawnEnemies(maze);
     }
 
-    void SpawnEnemies(FalTulajdonsagok[,] maze)
+    public void SpawnEnemies(FalTulajdonsagok[,] maze)
     {
         List<Pozicio> freeCells = GetFreeCells(maze);
         int enemiesToSpawn = Mathf.Min(enemyCount, freeCells.Count);
