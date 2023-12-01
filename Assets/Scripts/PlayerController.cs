@@ -1,0 +1,46 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerController : MonoBehaviour
+{
+    public float sebesseg = 1.5f;
+    private int felvettItemekSzama = 0; // Számláló az felvett itemek számához
+    private int itemCount = 0; // Számláló az itemek számára
+
+    public void PickUpItem(GameObject item)
+    {
+        // Itt írd meg, mit kell tenni, amikor a játékos felvette az itemet
+        Debug.Log("Item felvéve: " + item.name);
+
+        // Növeld a felvett itemek számát
+        felvettItemekSzama++;
+        Debug.Log("Felvett itemek száma: " + felvettItemekSzama);
+    }
+    public void IncreaseItemCount()
+    {
+        itemCount++;
+        Debug.Log("Itemek száma: " + itemCount);
+    }
+
+    void Update()
+    {
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("Vertical");
+
+        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+
+        // Csak vízszintesen vagy függõlegesen mozoghat
+        if (Mathf.Abs(moveHorizontal) > Mathf.Abs(moveVertical))
+        {
+            movement = new Vector3(moveHorizontal, 0.0f, 0.0f);
+        }
+        else
+        {
+            movement = new Vector3(0.0f, 0.0f, moveVertical);
+        }
+
+        transform.Translate(movement * sebesseg * Time.deltaTime);
+    }
+
+}
