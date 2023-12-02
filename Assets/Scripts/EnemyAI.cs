@@ -69,13 +69,17 @@ public class EnemyAI : MonoBehaviour
 
         transform.LookAt(transform.position + moveDirection);
     }
-
-
-    void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Wall"))
+        if (other.CompareTag("player"))
         {
-            ChooseNewDirection();
+            PlayerController playerController = other.GetComponent<PlayerController>();
+
+            if (playerController != null)
+            {
+                playerController.IncreaseEnemyMeet();
+
+            }
         }
     }
 }

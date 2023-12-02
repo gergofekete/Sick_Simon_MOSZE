@@ -4,18 +4,28 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
     public float sebesseg = 1.5f;
     private int felvettItemekSzama = 0; 
-    private int itemCount = 0; 
+    private int itemCount = 0;
+    public int eletero = 4;
+
+
 
     public void PickUpItem(GameObject item)
     {
-        
         Debug.Log("Item felvéve: " + item.name);
-
-        
         felvettItemekSzama++;
         Debug.Log("Felvett itemek száma: " + felvettItemekSzama);
+
+        // Egészség növelése, ha szükséges
+      //GameManager.Instance.heartScript.Heal();
+    }
+
+    public void IncreaseEnemyMeet()
+    {
+        eletero--;
+        Debug.Log("Életerõ: " + eletero);
     }
     public void IncreaseItemCount()
     {
