@@ -11,9 +11,9 @@ public class ItemController : MonoBehaviour
             if (playerController != null)
             {
                 playerController.PickUpItem(gameObject);
-                playerController.IncreaseItemCount(); // Számláló növelése
+                playerController.IncreaseItemCount();
 
-                Destroy(gameObject); // Item eltávolítása
+                Destroy(gameObject);
             }
         }
     }
