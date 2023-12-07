@@ -147,7 +147,9 @@
         139,
         140,
         141,
-        142
+        142,
+        143,
+        144
       ],
       "OverwriteOutputs": false,
       "DebugActionIndex": 0
@@ -237,6 +239,30 @@
       "DebugActionIndex": 7
     },
     {
+      "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/resources.assets",
+      "DisplayName": "Copying resources.assets",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win64/Data/resources.assets"
+      ],
+      "Outputs": [
+        "Builds/Sick_Simon_MOSZE_Data/resources.assets"
+      ],
+      "DebugActionIndex": 8
+    },
+    {
+      "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/resources.assets.resS",
+      "DisplayName": "Copying resources.assets.resS",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win64/Data/resources.assets.resS"
+      ],
+      "Outputs": [
+        "Builds/Sick_Simon_MOSZE_Data/resources.assets.resS"
+      ],
+      "DebugActionIndex": 9
+    },
+    {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Resources/unity_builtin_extra",
       "DisplayName": "Copying unity_builtin_extra",
       "ActionType": "CopyFiles",
@@ -246,7 +272,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Resources/unity_builtin_extra"
       ],
-      "DebugActionIndex": 8
+      "DebugActionIndex": 10
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/RuntimeInitializeOnLoads.json",
@@ -258,7 +284,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/RuntimeInitializeOnLoads.json"
       ],
-      "DebugActionIndex": 9
+      "DebugActionIndex": 11
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/ScriptingAssemblies.json",
@@ -270,7 +296,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/ScriptingAssemblies.json"
       ],
-      "DebugActionIndex": 10
+      "DebugActionIndex": 12
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/sharedassets0.assets",
@@ -282,7 +308,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/sharedassets0.assets"
       ],
-      "DebugActionIndex": 11
+      "DebugActionIndex": 13
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/sharedassets0.assets.resS",
@@ -294,7 +320,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/sharedassets0.assets.resS"
       ],
-      "DebugActionIndex": 12
+      "DebugActionIndex": 14
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/sharedassets1.assets",
@@ -306,7 +332,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/sharedassets1.assets"
       ],
-      "DebugActionIndex": 13
+      "DebugActionIndex": 15
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/sharedassets1.assets.resS",
@@ -318,20 +344,20 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/sharedassets1.assets.resS"
       ],
-      "DebugActionIndex": 14
+      "DebugActionIndex": 16
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/boot.config_tyr4.info",
       "DisplayName": "Writing boot.config_tyr4.info",
       "ActionType": "WriteFile",
       "PayloadOffset": 83,
-      "PayloadLength": 13381,
+      "PayloadLength": 13494,
       "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/csharpactions/boot.config_tyr4.info"
       ],
-      "DebugActionIndex": 15
+      "DebugActionIndex": 17
     },
     {
       "Annotation": "AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config",
@@ -347,6 +373,8 @@
         "Library/PlayerDataCache/Win64/Data/level0.resS",
         "Library/PlayerDataCache/Win64/Data/level1",
         "Library/PlayerDataCache/Win64/Data/level1.resS",
+        "Library/PlayerDataCache/Win64/Data/resources.assets",
+        "Library/PlayerDataCache/Win64/Data/resources.assets.resS",
         "Library/PlayerDataCache/Win64/Data/Resources/unity_builtin_extra",
         "Library/PlayerDataCache/Win64/Data/RuntimeInitializeOnLoads.json",
         "Library/PlayerDataCache/Win64/Data/ScriptingAssemblies.json",
@@ -493,12 +521,12 @@
         "Library/Bee/artifacts/WinPlayerBuildProgram/boot.config"
       ],
       "ToBuildDependencies": [
-        15
+        17
       ],
       "OverwriteOutputs": false,
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 16
+      "DebugActionIndex": 18
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/boot.config",
@@ -511,9 +539,9 @@
         "Builds/Sick_Simon_MOSZE_Data/boot.config"
       ],
       "ToBuildDependencies": [
-        16
+        18
       ],
-      "DebugActionIndex": 17
+      "DebugActionIndex": 19
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.AIModule.dll",
@@ -525,7 +553,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.AIModule.dll"
       ],
-      "DebugActionIndex": 18
+      "DebugActionIndex": 20
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.ARModule.dll",
@@ -537,7 +565,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.ARModule.dll"
       ],
-      "DebugActionIndex": 19
+      "DebugActionIndex": 21
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.AccessibilityModule.dll",
@@ -549,7 +577,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.AccessibilityModule.dll"
       ],
-      "DebugActionIndex": 20
+      "DebugActionIndex": 22
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.AndroidJNIModule.dll",
@@ -561,7 +589,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.AndroidJNIModule.dll"
       ],
-      "DebugActionIndex": 21
+      "DebugActionIndex": 23
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.AnimationModule.dll",
@@ -573,7 +601,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.AnimationModule.dll"
       ],
-      "DebugActionIndex": 22
+      "DebugActionIndex": 24
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.AssetBundleModule.dll",
@@ -585,7 +613,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.AssetBundleModule.dll"
       ],
-      "DebugActionIndex": 23
+      "DebugActionIndex": 25
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.AudioModule.dll",
@@ -597,7 +625,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.AudioModule.dll"
       ],
-      "DebugActionIndex": 24
+      "DebugActionIndex": 26
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.ClothModule.dll",
@@ -609,7 +637,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.ClothModule.dll"
       ],
-      "DebugActionIndex": 25
+      "DebugActionIndex": 27
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.ClusterInputModule.dll",
@@ -621,7 +649,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.ClusterInputModule.dll"
       ],
-      "DebugActionIndex": 26
+      "DebugActionIndex": 28
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.ClusterRendererModule.dll",
@@ -633,7 +661,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.ClusterRendererModule.dll"
       ],
-      "DebugActionIndex": 27
+      "DebugActionIndex": 29
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.ContentLoadModule.dll",
@@ -645,7 +673,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.ContentLoadModule.dll"
       ],
-      "DebugActionIndex": 28
+      "DebugActionIndex": 30
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.CoreModule.dll",
@@ -657,7 +685,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.CoreModule.dll"
       ],
-      "DebugActionIndex": 29
+      "DebugActionIndex": 31
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.CrashReportingModule.dll",
@@ -669,7 +697,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.CrashReportingModule.dll"
       ],
-      "DebugActionIndex": 30
+      "DebugActionIndex": 32
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.DSPGraphModule.dll",
@@ -681,7 +709,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.DSPGraphModule.dll"
       ],
-      "DebugActionIndex": 31
+      "DebugActionIndex": 33
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.DirectorModule.dll",
@@ -693,7 +721,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.DirectorModule.dll"
       ],
-      "DebugActionIndex": 32
+      "DebugActionIndex": 34
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.GIModule.dll",
@@ -705,7 +733,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.GIModule.dll"
       ],
-      "DebugActionIndex": 33
+      "DebugActionIndex": 35
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.GameCenterModule.dll",
@@ -717,7 +745,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.GameCenterModule.dll"
       ],
-      "DebugActionIndex": 34
+      "DebugActionIndex": 36
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.GridModule.dll",
@@ -729,7 +757,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.GridModule.dll"
       ],
-      "DebugActionIndex": 35
+      "DebugActionIndex": 37
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.HotReloadModule.dll",
@@ -741,7 +769,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.HotReloadModule.dll"
       ],
-      "DebugActionIndex": 36
+      "DebugActionIndex": 38
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.IMGUIModule.dll",
@@ -753,7 +781,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.IMGUIModule.dll"
       ],
-      "DebugActionIndex": 37
+      "DebugActionIndex": 39
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.ImageConversionModule.dll",
@@ -765,7 +793,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.ImageConversionModule.dll"
       ],
-      "DebugActionIndex": 38
+      "DebugActionIndex": 40
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.InputLegacyModule.dll",
@@ -777,7 +805,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.InputLegacyModule.dll"
       ],
-      "DebugActionIndex": 39
+      "DebugActionIndex": 41
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.InputModule.dll",
@@ -789,7 +817,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.InputModule.dll"
       ],
-      "DebugActionIndex": 40
+      "DebugActionIndex": 42
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.JSONSerializeModule.dll",
@@ -801,7 +829,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.JSONSerializeModule.dll"
       ],
-      "DebugActionIndex": 41
+      "DebugActionIndex": 43
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.LocalizationModule.dll",
@@ -813,7 +841,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.LocalizationModule.dll"
       ],
-      "DebugActionIndex": 42
+      "DebugActionIndex": 44
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.NVIDIAModule.dll",
@@ -825,7 +853,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.NVIDIAModule.dll"
       ],
-      "DebugActionIndex": 43
+      "DebugActionIndex": 45
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.ParticleSystemModule.dll",
@@ -837,7 +865,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.ParticleSystemModule.dll"
       ],
-      "DebugActionIndex": 44
+      "DebugActionIndex": 46
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.PerformanceReportingModule.dll",
@@ -849,7 +877,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.PerformanceReportingModule.dll"
       ],
-      "DebugActionIndex": 45
+      "DebugActionIndex": 47
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.Physics2DModule.dll",
@@ -861,7 +889,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.Physics2DModule.dll"
       ],
-      "DebugActionIndex": 46
+      "DebugActionIndex": 48
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.PhysicsModule.dll",
@@ -873,7 +901,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.PhysicsModule.dll"
       ],
-      "DebugActionIndex": 47
+      "DebugActionIndex": 49
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.ProfilerModule.dll",
@@ -885,7 +913,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.ProfilerModule.dll"
       ],
-      "DebugActionIndex": 48
+      "DebugActionIndex": 50
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.PropertiesModule.dll",
@@ -897,7 +925,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.PropertiesModule.dll"
       ],
-      "DebugActionIndex": 49
+      "DebugActionIndex": 51
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
@@ -909,7 +937,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll"
       ],
-      "DebugActionIndex": 50
+      "DebugActionIndex": 52
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.ScreenCaptureModule.dll",
@@ -921,7 +949,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.ScreenCaptureModule.dll"
       ],
-      "DebugActionIndex": 51
+      "DebugActionIndex": 53
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.SharedInternalsModule.dll",
@@ -933,7 +961,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.SharedInternalsModule.dll"
       ],
-      "DebugActionIndex": 52
+      "DebugActionIndex": 54
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.SpriteMaskModule.dll",
@@ -945,7 +973,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.SpriteMaskModule.dll"
       ],
-      "DebugActionIndex": 53
+      "DebugActionIndex": 55
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.SpriteShapeModule.dll",
@@ -957,7 +985,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.SpriteShapeModule.dll"
       ],
-      "DebugActionIndex": 54
+      "DebugActionIndex": 56
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.StreamingModule.dll",
@@ -969,7 +997,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.StreamingModule.dll"
       ],
-      "DebugActionIndex": 55
+      "DebugActionIndex": 57
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.SubstanceModule.dll",
@@ -981,7 +1009,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.SubstanceModule.dll"
       ],
-      "DebugActionIndex": 56
+      "DebugActionIndex": 58
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.SubsystemsModule.dll",
@@ -993,7 +1021,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.SubsystemsModule.dll"
       ],
-      "DebugActionIndex": 57
+      "DebugActionIndex": 59
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.TLSModule.dll",
@@ -1005,7 +1033,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.TLSModule.dll"
       ],
-      "DebugActionIndex": 58
+      "DebugActionIndex": 60
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.TerrainModule.dll",
@@ -1017,7 +1045,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.TerrainModule.dll"
       ],
-      "DebugActionIndex": 59
+      "DebugActionIndex": 61
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.TerrainPhysicsModule.dll",
@@ -1029,7 +1057,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.TerrainPhysicsModule.dll"
       ],
-      "DebugActionIndex": 60
+      "DebugActionIndex": 62
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll",
@@ -1041,7 +1069,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll"
       ],
-      "DebugActionIndex": 61
+      "DebugActionIndex": 63
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll",
@@ -1053,7 +1081,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll"
       ],
-      "DebugActionIndex": 62
+      "DebugActionIndex": 64
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.TextRenderingModule.dll",
@@ -1065,7 +1093,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.TextRenderingModule.dll"
       ],
-      "DebugActionIndex": 63
+      "DebugActionIndex": 65
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.TilemapModule.dll",
@@ -1077,7 +1105,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.TilemapModule.dll"
       ],
-      "DebugActionIndex": 64
+      "DebugActionIndex": 66
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UIElementsModule.dll",
@@ -1089,7 +1117,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UIElementsModule.dll"
       ],
-      "DebugActionIndex": 65
+      "DebugActionIndex": 67
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UIModule.dll",
@@ -1101,7 +1129,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UIModule.dll"
       ],
-      "DebugActionIndex": 66
+      "DebugActionIndex": 68
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UmbraModule.dll",
@@ -1113,7 +1141,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UmbraModule.dll"
       ],
-      "DebugActionIndex": 67
+      "DebugActionIndex": 69
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll",
@@ -1125,7 +1153,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll"
       ],
-      "DebugActionIndex": 68
+      "DebugActionIndex": 70
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UnityAnalyticsModule.dll",
@@ -1137,7 +1165,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UnityAnalyticsModule.dll"
       ],
-      "DebugActionIndex": 69
+      "DebugActionIndex": 71
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UnityConnectModule.dll",
@@ -1149,7 +1177,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UnityConnectModule.dll"
       ],
-      "DebugActionIndex": 70
+      "DebugActionIndex": 72
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UnityCurlModule.dll",
@@ -1161,7 +1189,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UnityCurlModule.dll"
       ],
-      "DebugActionIndex": 71
+      "DebugActionIndex": 73
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UnityTestProtocolModule.dll",
@@ -1173,7 +1201,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UnityTestProtocolModule.dll"
       ],
-      "DebugActionIndex": 72
+      "DebugActionIndex": 74
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
@@ -1185,7 +1213,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll"
       ],
-      "DebugActionIndex": 73
+      "DebugActionIndex": 75
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll",
@@ -1197,7 +1225,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll"
       ],
-      "DebugActionIndex": 74
+      "DebugActionIndex": 76
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UnityWebRequestModule.dll",
@@ -1209,7 +1237,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UnityWebRequestModule.dll"
       ],
-      "DebugActionIndex": 75
+      "DebugActionIndex": 77
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
@@ -1221,7 +1249,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll"
       ],
-      "DebugActionIndex": 76
+      "DebugActionIndex": 78
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll",
@@ -1233,7 +1261,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll"
       ],
-      "DebugActionIndex": 77
+      "DebugActionIndex": 79
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.VFXModule.dll",
@@ -1245,7 +1273,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.VFXModule.dll"
       ],
-      "DebugActionIndex": 78
+      "DebugActionIndex": 80
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.VRModule.dll",
@@ -1257,7 +1285,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.VRModule.dll"
       ],
-      "DebugActionIndex": 79
+      "DebugActionIndex": 81
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.VehiclesModule.dll",
@@ -1269,7 +1297,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.VehiclesModule.dll"
       ],
-      "DebugActionIndex": 80
+      "DebugActionIndex": 82
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.VideoModule.dll",
@@ -1281,7 +1309,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.VideoModule.dll"
       ],
-      "DebugActionIndex": 81
+      "DebugActionIndex": 83
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.VirtualTexturingModule.dll",
@@ -1293,7 +1321,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.VirtualTexturingModule.dll"
       ],
-      "DebugActionIndex": 82
+      "DebugActionIndex": 84
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.WindModule.dll",
@@ -1305,7 +1333,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.WindModule.dll"
       ],
-      "DebugActionIndex": 83
+      "DebugActionIndex": 85
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.XRModule.dll",
@@ -1317,7 +1345,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.XRModule.dll"
       ],
-      "DebugActionIndex": 84
+      "DebugActionIndex": 86
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.dll",
@@ -1329,7 +1357,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.dll"
       ],
-      "DebugActionIndex": 85
+      "DebugActionIndex": 87
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/Assembly-CSharp.dll",
@@ -1341,7 +1369,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/Assembly-CSharp.dll"
       ],
-      "DebugActionIndex": 86
+      "DebugActionIndex": 88
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/Unity.Timeline.dll",
@@ -1353,7 +1381,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/Unity.Timeline.dll"
       ],
-      "DebugActionIndex": 87
+      "DebugActionIndex": 89
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UI.dll",
@@ -1365,7 +1393,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/UnityEngine.UI.dll"
       ],
-      "DebugActionIndex": 88
+      "DebugActionIndex": 90
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/Scripts.dll",
@@ -1377,7 +1405,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/Scripts.dll"
       ],
-      "DebugActionIndex": 89
+      "DebugActionIndex": 91
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/Unity.TextMeshPro.dll",
@@ -1389,7 +1417,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/Unity.TextMeshPro.dll"
       ],
-      "DebugActionIndex": 90
+      "DebugActionIndex": 92
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/Unity.VisualScripting.Core.dll",
@@ -1401,7 +1429,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/Unity.VisualScripting.Core.dll"
       ],
-      "DebugActionIndex": 91
+      "DebugActionIndex": 93
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/Unity.VisualScripting.State.dll",
@@ -1413,7 +1441,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/Unity.VisualScripting.State.dll"
       ],
-      "DebugActionIndex": 92
+      "DebugActionIndex": 94
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/Unity.VisualScripting.Flow.dll",
@@ -1425,7 +1453,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/Unity.VisualScripting.Flow.dll"
       ],
-      "DebugActionIndex": 93
+      "DebugActionIndex": 95
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll",
@@ -1437,7 +1465,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll"
       ],
-      "DebugActionIndex": 94
+      "DebugActionIndex": 96
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/netstandard.dll",
@@ -1449,7 +1477,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/netstandard.dll"
       ],
-      "DebugActionIndex": 95
+      "DebugActionIndex": 97
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/Mono.Security.dll",
@@ -1461,7 +1489,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/Mono.Security.dll"
       ],
-      "DebugActionIndex": 96
+      "DebugActionIndex": 98
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/System.ComponentModel.Composition.dll",
@@ -1473,7 +1501,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/System.ComponentModel.Composition.dll"
       ],
-      "DebugActionIndex": 97
+      "DebugActionIndex": 99
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/System.Configuration.dll",
@@ -1485,7 +1513,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/System.Configuration.dll"
       ],
-      "DebugActionIndex": 98
+      "DebugActionIndex": 100
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/System.Core.dll",
@@ -1497,7 +1525,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/System.Core.dll"
       ],
-      "DebugActionIndex": 99
+      "DebugActionIndex": 101
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/System.Data.DataSetExtensions.dll",
@@ -1509,7 +1537,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/System.Data.DataSetExtensions.dll"
       ],
-      "DebugActionIndex": 100
+      "DebugActionIndex": 102
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/System.Data.dll",
@@ -1521,7 +1549,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/System.Data.dll"
       ],
-      "DebugActionIndex": 101
+      "DebugActionIndex": 103
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/System.Drawing.dll",
@@ -1533,7 +1561,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/System.Drawing.dll"
       ],
-      "DebugActionIndex": 102
+      "DebugActionIndex": 104
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/System.EnterpriseServices.dll",
@@ -1545,7 +1573,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/System.EnterpriseServices.dll"
       ],
-      "DebugActionIndex": 103
+      "DebugActionIndex": 105
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/System.IO.Compression.FileSystem.dll",
@@ -1557,7 +1585,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/System.IO.Compression.FileSystem.dll"
       ],
-      "DebugActionIndex": 104
+      "DebugActionIndex": 106
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/System.IO.Compression.dll",
@@ -1569,7 +1597,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/System.IO.Compression.dll"
       ],
-      "DebugActionIndex": 105
+      "DebugActionIndex": 107
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/System.Net.Http.dll",
@@ -1581,7 +1609,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/System.Net.Http.dll"
       ],
-      "DebugActionIndex": 106
+      "DebugActionIndex": 108
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/System.Numerics.dll",
@@ -1593,7 +1621,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/System.Numerics.dll"
       ],
-      "DebugActionIndex": 107
+      "DebugActionIndex": 109
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/System.Runtime.Serialization.dll",
@@ -1605,7 +1633,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/System.Runtime.Serialization.dll"
       ],
-      "DebugActionIndex": 108
+      "DebugActionIndex": 110
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/System.Security.dll",
@@ -1617,7 +1645,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/System.Security.dll"
       ],
-      "DebugActionIndex": 109
+      "DebugActionIndex": 111
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/System.ServiceModel.Internals.dll",
@@ -1629,7 +1657,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/System.ServiceModel.Internals.dll"
       ],
-      "DebugActionIndex": 110
+      "DebugActionIndex": 112
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/System.Transactions.dll",
@@ -1641,7 +1669,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/System.Transactions.dll"
       ],
-      "DebugActionIndex": 111
+      "DebugActionIndex": 113
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/System.Xml.Linq.dll",
@@ -1653,7 +1681,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/System.Xml.Linq.dll"
       ],
-      "DebugActionIndex": 112
+      "DebugActionIndex": 114
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/System.Xml.dll",
@@ -1665,7 +1693,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/System.Xml.dll"
       ],
-      "DebugActionIndex": 113
+      "DebugActionIndex": 115
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/System.dll",
@@ -1677,7 +1705,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/System.dll"
       ],
-      "DebugActionIndex": 114
+      "DebugActionIndex": 116
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Managed/mscorlib.dll",
@@ -1689,20 +1717,20 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Managed/mscorlib.dll"
       ],
-      "DebugActionIndex": 115
+      "DebugActionIndex": 117
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info",
       "DisplayName": "Writing app.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 13553,
+      "PayloadOffset": 13666,
       "PayloadLength": 31,
       "PayloadDebugContentSnippet": "DefaultCompany\nSick_Simon_MOSZ",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info"
       ],
-      "DebugActionIndex": 116
+      "DebugActionIndex": 118
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/app.info",
@@ -1715,9 +1743,9 @@
         "Builds/Sick_Simon_MOSZE_Data/app.info"
       ],
       "ToBuildDependencies": [
-        116
+        118
       ],
-      "DebugActionIndex": 117
+      "DebugActionIndex": 119
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE_Data/Resources/unity default resources",
@@ -1729,7 +1757,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE_Data/Resources/unity default resources"
       ],
-      "DebugActionIndex": 118
+      "DebugActionIndex": 120
     },
     {
       "Annotation": "CopyFiles Builds/Sick_Simon_MOSZE.exe",
@@ -1741,7 +1769,7 @@
       "Outputs": [
         "Builds/Sick_Simon_MOSZE.exe"
       ],
-      "DebugActionIndex": 119
+      "DebugActionIndex": 121
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
@@ -1753,7 +1781,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll"
       ],
-      "DebugActionIndex": 120
+      "DebugActionIndex": 122
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
@@ -1765,7 +1793,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll"
       ],
-      "DebugActionIndex": 121
+      "DebugActionIndex": 123
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
@@ -1777,7 +1805,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 122
+      "DebugActionIndex": 124
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
@@ -1789,7 +1817,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 123
+      "DebugActionIndex": 125
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/2.0/machine.config",
@@ -1801,7 +1829,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/2.0/machine.config"
       ],
-      "DebugActionIndex": 124
+      "DebugActionIndex": 126
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/2.0/settings.map",
@@ -1813,7 +1841,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/2.0/settings.map"
       ],
-      "DebugActionIndex": 125
+      "DebugActionIndex": 127
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/2.0/web.config",
@@ -1825,7 +1853,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/2.0/web.config"
       ],
-      "DebugActionIndex": 126
+      "DebugActionIndex": 128
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
@@ -1837,7 +1865,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 127
+      "DebugActionIndex": 129
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
@@ -1849,7 +1877,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 128
+      "DebugActionIndex": 130
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.0/machine.config",
@@ -1861,7 +1889,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.0/machine.config"
       ],
-      "DebugActionIndex": 129
+      "DebugActionIndex": 131
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.0/settings.map",
@@ -1873,7 +1901,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.0/settings.map"
       ],
-      "DebugActionIndex": 130
+      "DebugActionIndex": 132
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.0/web.config",
@@ -1885,7 +1913,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.0/web.config"
       ],
-      "DebugActionIndex": 131
+      "DebugActionIndex": 133
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
@@ -1897,7 +1925,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 132
+      "DebugActionIndex": 134
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
@@ -1909,7 +1937,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 133
+      "DebugActionIndex": 135
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.5/machine.config",
@@ -1921,7 +1949,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.5/machine.config"
       ],
-      "DebugActionIndex": 134
+      "DebugActionIndex": 136
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.5/settings.map",
@@ -1933,7 +1961,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.5/settings.map"
       ],
-      "DebugActionIndex": 135
+      "DebugActionIndex": 137
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.5/web.config",
@@ -1945,7 +1973,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.5/web.config"
       ],
-      "DebugActionIndex": 136
+      "DebugActionIndex": 138
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/browscap.ini",
@@ -1957,7 +1985,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/browscap.ini"
       ],
-      "DebugActionIndex": 137
+      "DebugActionIndex": 139
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/config",
@@ -1969,7 +1997,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/config"
       ],
-      "DebugActionIndex": 138
+      "DebugActionIndex": 140
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/mconfig/config.xml",
@@ -1981,7 +2009,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/mconfig/config.xml"
       ],
-      "DebugActionIndex": 139
+      "DebugActionIndex": 141
     },
     {
       "Annotation": "CopyFiles Builds/UnityCrashHandler64.exe",
@@ -1993,7 +2021,7 @@
       "Outputs": [
         "Builds/UnityCrashHandler64.exe"
       ],
-      "DebugActionIndex": 140
+      "DebugActionIndex": 142
     },
     {
       "Annotation": "CopyFiles Builds/UnityPlayer.dll",
@@ -2005,7 +2033,7 @@
       "Outputs": [
         "Builds/UnityPlayer.dll"
       ],
-      "DebugActionIndex": 141
+      "DebugActionIndex": 143
     },
     {
       "Annotation": "Player",
@@ -2027,8 +2055,8 @@
         12,
         13,
         14,
-        17,
-        18,
+        15,
+        16,
         19,
         20,
         21,
@@ -2126,8 +2154,8 @@
         113,
         114,
         115,
+        116,
         117,
-        118,
         119,
         120,
         121,
@@ -2150,10 +2178,12 @@
         138,
         139,
         140,
-        141
+        141,
+        142,
+        143
       ],
       "OverwriteOutputs": false,
-      "DebugActionIndex": 142
+      "DebugActionIndex": 144
     }
   ],
   "FileSignatures": [
@@ -2354,7 +2384,7 @@
   "EmitDataForBeeWhy": 0,
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 142
+          "Player": 144
         }
 ,  "DefaultNodes": [
     0

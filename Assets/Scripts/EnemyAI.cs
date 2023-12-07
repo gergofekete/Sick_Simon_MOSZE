@@ -4,14 +4,26 @@ using System.Collections.Generic;
 
 public class EnemyAI : MonoBehaviour
 {
-    public float moveSpeed = 2.0f;
+    public float moveSpeed = 3.0f;
     public float decisionDelay = 1.0f;
     public float raycastDistance = 2.0f;
+
+
+
+    public Transform spawnPoint;
 
     private Vector3 moveDirection;
     private float timer;
 
     private Rigidbody rb;
+
+    private int layerMask;
+
+    void Awake()
+    {
+        // Így hívjuk meg a NameToLayer-t az Awake metódusban
+        layerMask = 1 << LayerMask.NameToLayer("Wall");
+    }
 
     void Start()
     {
@@ -35,6 +47,20 @@ public class EnemyAI : MonoBehaviour
     void FixedUpdate()
     {
         rb.velocity = moveDirection * moveSpeed;
+
+        Vector3 raycastOrigin = transform.position + new Vector3(0, 0.1f, 0);
+        RaycastHit hit;
+
+        if (Physics.Raycast(raycastOrigin, moveDirection, out hit, raycastDistance, layerMask))
+
+        {
+            // Ha találtunk ütközést, módosítsuk az irányt
+            Vector3 newDirection = Vector3.Reflect(moveDirection, hit.normal);
+            moveDirection = newDirection.normalized;
+
+            // Most már lehet, hogy újra kell nézni az új irányba
+            transform.LookAt(transform.position + moveDirection);
+        }
     }
 
     bool IsPathBlocked()
@@ -69,7 +95,7 @@ public class EnemyAI : MonoBehaviour
 
         transform.LookAt(transform.position + moveDirection);
     }
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("player"))
         {
@@ -78,8 +104,21 @@ public class EnemyAI : MonoBehaviour
             if (playerController != null)
             {
                 playerController.IncreaseEnemyMeet();
-
+                RespawnEnemy();
             }
         }
     }
+
+    void RespawnEnemy()
+    {
+
+        // Spawn a new enemy at a random position
+        Vector3 randomPosition = new Vector3(Random.Range(-5.5f, 4.5f), 0.3f, Random.Range(-5.5f, 4.5f));
+
+        // Instantiate the new enemy
+        transform.position = randomPosition;
+
+    }
+
+
 }

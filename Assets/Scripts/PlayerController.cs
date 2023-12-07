@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    public float sebesseg = 1.5f;
+    public float sebesseg = 2.5f;
     private int felvettItemekSzama = 0; 
     private int itemCount = 0;
     public int eletero = 4;

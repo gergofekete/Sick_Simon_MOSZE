@@ -2,13 +2,17 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - MainMenuPresenter
+    Scripts:
+    - EnemyAI
     Scripts.dll:
     - EnemyAI
     - EnemySpawner
     - ItemController
     - ItemSpawner
     - MazeRenderer
+    - PauseMenu
     - PlayerController
+    - heart
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     - Packages.Rider.Editor.UnitTesting.SyncTestRunEventsHandler
@@ -19,7 +23,28 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.RerunCallbackData
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Shadow
+    - UnityEngine.UI.Text
   serializedClasses:
+    UnityEngine.CoreModule:
+    - UnityEngine.Events.ArgumentCache
+    - UnityEngine.Events.PersistentCallGroup
+    - UnityEngine.Events.PersistentListenerMode
+    UnityEngine.UI:
+    - UnityEngine.UI.AnimationTriggers
+    - UnityEngine.UI.Button/ButtonClickedEvent
+    - UnityEngine.UI.ColorBlock
+    - UnityEngine.UI.FontData
+    - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+    - UnityEngine.UI.Navigation
+    - UnityEngine.UI.SpriteState
     UnityEngine.UIElementsModule:
     - UnityEngine.UIElements.Button/UxmlFactory
     - UnityEngine.UIElements.DynamicAtlasSettings
@@ -36,7 +61,16 @@ ScriptsOnlyBuild:
     - UnityEngine.UIElements.UxmlRootElementFactory
     - UnityEngine.UIElements.VisualElement/UxmlFactory
     - UnityEngine.UIElements.VisualElementAsset
-  methodsToPreserve: []
+  methodsToPreserve:
+  - assembly: Scripts
+    fullTypeName: PauseMenu
+    methodName: Resume
+  - assembly: Scripts
+    fullTypeName: PauseMenu
+    methodName: LoadMenu
+  - assembly: Scripts
+    fullTypeName: PauseMenu
+    methodName: QuitGame
   sceneClasses:
     Assets/Scenes/MainMenu.unity:
     - Class: 1
@@ -47,9 +81,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 65
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -70,7 +114,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 626}
     - Class: 114
-      Script: {instanceID: 36964}
+      Script: {instanceID: 2544}
+    - Class: 114
+      Script: {instanceID: 6226}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -113,22 +159,52 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1574}
+    - Class: 114
       Script: {instanceID: 1642}
     - Class: 114
       Script: {instanceID: 1672}
     - Class: 114
-      Script: {instanceID: 2048}
+      Script: {instanceID: 1764}
     - Class: 114
-      Script: {instanceID: 6242}
+      Script: {instanceID: 2046}
     - Class: 114
-      Script: {instanceID: 7010}
+      Script: {instanceID: 2572}
     - Class: 114
-      Script: {instanceID: 28852}
+      Script: {instanceID: 2774}
+    - Class: 114
+      Script: {instanceID: 2862}
+    - Class: 114
+      Script: {instanceID: 3058}
+    - Class: 114
+      Script: {instanceID: 5196}
+    - Class: 114
+      Script: {instanceID: 5490}
+    - Class: 114
+      Script: {instanceID: 5840}
+    - Class: 114
+      Script: {instanceID: 5954}
+    - Class: 114
+      Script: {instanceID: 6226}
+    - Class: 114
+      Script: {instanceID: 6992}
+    - Class: 114
+      Script: {instanceID: 29662}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -253,6 +329,12 @@ ScriptsOnlyBuild:
     className: UnityOnBecameVisibleMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 2dde6a6970748a5bef2701316989d092
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MainMenuPresenter
+  - hash:
+      serializedVersion: 2
       Hash: e987953190eb4c12cf19df790566dc2c
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
@@ -335,6 +417,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnInputFieldEndEditMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 0fbd6fbf751643ac082abfa034291fd6
+    assemblyName: Scripts
+    namespaceName: 
+    className: ItemController
   - hash:
       serializedVersion: 2
       Hash: bf40c7a9dc15bc219687c9838aa9b41f
@@ -727,6 +815,12 @@ ScriptsOnlyBuild:
     className: UnityOnMouseUpAsButtonMessageListener
   - hash:
       serializedVersion: 2
+      Hash: ecc070f20b0e305cc59bcacb113eed7b
+    assemblyName: Scripts
+    namespaceName: 
+    className: PauseMenu
+  - hash:
+      serializedVersion: 2
       Hash: 4f353524ce6564e40764f1ea080b2d85
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -907,7 +1001,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: d143399e221f8cb5f62a9ca63a2f35a7
+      Hash: ab017eb1b14f6fa8fff75b6c619eac26
     assemblyName: Scripts
     namespaceName: 
     className: PlayerController
@@ -985,16 +1079,10 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 0fbd6fbf751643ac082abfa034291fd6
+      Hash: 3966f6f3409ad826cd4a5f1ba696b595
     assemblyName: Scripts
     namespaceName: 
-    className: ItemController
-  - hash:
-      serializedVersion: 2
-      Hash: 2dde6a6970748a5bef2701316989d092
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: MainMenuPresenter
+    className: heart
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
