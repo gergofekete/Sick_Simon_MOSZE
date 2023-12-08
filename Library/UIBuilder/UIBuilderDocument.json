@@ -15,7 +15,7 @@
                     {
                         "m_StyleSheet": {
                             "fileID": 7433441132597879392,
-                            "guid": "b9e78d6905267854cb8e94a5ba7f4f15",
+                            "guid": "cc5f60451f9b5d34bac1defcaaf1fa2d",
                             "type": 3
                         },
                         "m_BackupStyleSheet": {
@@ -26,7 +26,7 @@
                     {
                         "m_StyleSheet": {
                             "fileID": 7433441132597879392,
-                            "guid": "099d85f24832d964091710c0302d470f",
+                            "guid": "1e45d802da6581745a677f226bcb4f0c",
                             "type": 3
                         },
                         "m_BackupStyleSheet": {
@@ -41,14 +41,14 @@
                 "m_OpenendVisualTreeAssetOldPath": "Assets/UI Toolkit/Panels/MainMenu.uxml",
                 "m_VisualTreeAsset": {
                     "fileID": 9197481963319205126,
-                    "guid": "c4f395265c9d074409e9aa6b1df36a58",
+                    "guid": "8e562415b20c59049be9ab5b8c1f818f",
                     "type": 3
                 },
                 "m_ActiveStyleSheet": {
                     "instanceID": 0
                 },
                 "m_Settings": {
-                    "UxmlGuid": "c4f395265c9d074409e9aa6b1df36a58",
+                    "UxmlGuid": "8e562415b20c59049be9ab5b8c1f818f",
                     "UxmlPath": "Assets/UI Toolkit/Panels/MainMenu.uxml",
                     "CanvasX": 0,
                     "CanvasY": 0,

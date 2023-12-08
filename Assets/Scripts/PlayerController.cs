@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
 
     public float sebesseg = 2.5f;
     private int felvettItemekSzama = 0; 
-    private int itemCount = 0;
+    public int itemCount = 0;
     public int eletero = 4;
+
 
 
 
@@ -60,6 +62,16 @@ public class PlayerController : MonoBehaviour
         }
 
         transform.Translate(movement * sebesseg * Time.deltaTime);
+    }
+
+    void CheckHealth()
+    {
+        // Ellenõrizd, hogy az életerõ elérte-e a nullát
+        if (eletero <= 0)
+        {
+            // Ha igen, hozd be a játék vége jelenetet
+            SceneManager.LoadScene("GameEndScene");
+        }
     }
 
 }

@@ -50,22 +50,27 @@ MonoBehaviour:
   - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__unity-ui-builder-inspector__builder-inspector-local-styles-foldout__builder-inspector-style-section-foldout-transform__Unity.UI.Builder.PersistedFoldout
   - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__unity-ui-builder-inspector__builder-inspector-local-styles-foldout__builder-inspector-style-section-foldout-cursor__Unity.UI.Builder.PersistedFoldout
   - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__unity-ui-builder-inspector__builder-inspector-local-styles-foldout__builder-inspector-style-section-foldout-transition__Unity.UI.Builder.PersistedFoldout
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__unity-ui-builder-inspector__builder-inspector-attributes-inherited-styles-foldout__builder-inspector-matching-selectors-container-foldout__builder-inspector-rule-foldout__0__Unity.UI.Builder.PersistedFoldout
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__unity-ui-builder-inspector__builder-inspector-attributes-inherited-styles-foldout__builder-inspector-matching-selectors-container-foldout__builder-inspector-rule-foldout__1__Unity.UI.Builder.PersistedFoldout
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__unity-ui-builder-inspector__builder-inspector-attributes-inherited-styles-foldout__builder-inspector-matching-selectors-container-foldout__builder-inspector-rule-foldout__2__Unity.UI.Builder.PersistedFoldout
+  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__unity-ui-builder-inspector__builder-inspector-attributes-inherited-styles-foldout__builder-inspector-matching-selectors-container-foldout__builder-inspector-rule-foldout__3__Unity.UI.Builder.PersistedFoldout
   m_Values:
   - '{"m_FixedPaneDimension":300.0}'
   - '{"m_FixedPaneDimension":450.0}'
   - '{"m_FixedPaneDimension":200.0}'
   - '{"m_ElementInfoVisibilityState":0}'
-  - '{"m_ShowAlternatingRowBackgrounds":0,"serializedVirtualizationData":{"scrollOffset":{"x":0.0,"y":0.0},"firstVisibleIndex":0,"contentPadding":0.0,"contentHeight":0.0,"anchoredItemIndex":0,"anchorOffset":0.0},"m_ExpandedItemIds":[]}'
+  - '{"m_ShowAlternatingRowBackgrounds":0,"serializedVirtualizationData":{"scrollOffset":{"x":0.0,"y":0.0},"firstVisibleIndex":0,"contentPadding":0.0,"contentHeight":0.0,"anchoredItemIndex":0,"anchorOffset":0.0},"m_ExpandedItemIds":[3]}'
   - '{"m_ElementInfoVisibilityState":0}'
-  - '{"m_ShowAlternatingRowBackgrounds":0,"serializedVirtualizationData":{"scrollOffset":{"x":0.0,"y":0.0},"firstVisibleIndex":0,"contentPadding":0.0,"contentHeight":0.0,"anchoredItemIndex":0,"anchorOffset":0.0},"m_ExpandedItemIds":[]}'
+  - '{"m_ShowAlternatingRowBackgrounds":0,"serializedVirtualizationData":{"scrollOffset":{"x":0.0,"y":0.0},"firstVisibleIndex":0,"contentPadding":0.0,"contentHeight":0.0,"anchoredItemIndex":0,"anchorOffset":0.0},"m_ExpandedItemIds":[1,1993438344,-1231152614]}'
   - '{"m_ShowPackageTemplates":false,"m_ViewMode":0,"m_ActiveTab":0}'
-  - '{"m_SelectedItemId":0}'
-  - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":751.0}'
+  - '{"m_SelectedItemId":-1268115984}'
+  - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":460.0}'
   - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":0.0}'
   - '{"m_FixedPaneDimension":300.0}'
   - '{"m_FixedPaneDimension":20.0}'
   - '{"m_FixedPaneDimension":200.0}'
-  - '{"m_CachedScrollPositionCount":0,"m_OldestScrollPositionIndex":0,"m_CachedContentHeights":[0.0,0.0,0.0,0.0,0.0],"m_CachedScrollPositions":[{"scrollPosition":0.0,"maxScrollValue":0.0},{"scrollPosition":0.0,"maxScrollValue":0.0},{"scrollPosition":0.0,"maxScrollValue":0.0},{"scrollPosition":0.0,"maxScrollValue":0.0},{"scrollPosition":0.0,"maxScrollValue":0.0}]}'
+  - '{"m_CachedScrollPositionCount":3,"m_OldestScrollPositionIndex":0,"m_CachedContentHeights":[864.0,1026.0,906.0,0.0,0.0],"m_CachedScrollPositions":[{"scrollPosition":5.0,"maxScrollValue":5.0},{"scrollPosition":167.0,"maxScrollValue":167.0},{"scrollPosition":47.0,"maxScrollValue":47.0},{"scrollPosition":0.0,"maxScrollValue":0.0},{"scrollPosition":0.0,"maxScrollValue":0.0}]}'
+  - '{"m_Value":true}'
   - '{"m_Value":true}'
   - '{"m_Value":false}'
   - '{"m_Value":false}'
@@ -74,7 +79,6 @@ MonoBehaviour:
   - '{"m_Value":false}'
   - '{"m_Value":false}'
   - '{"m_Value":false}'
-  - '{"m_Value":false}'
   - '{"m_Value":true,"fieldValues":[]}'
   - '{"m_Value":true,"fieldValues":[]}'
   - '{"m_Value":false}'
@@ -82,9 +86,13 @@ MonoBehaviour:
   - '{"m_Value":false}'
   - '{"m_Value":true,"fieldValues":[]}'
   - '{"m_Value":false}'
+  - '{"m_Value":true,"fieldValues":[{"r":1.0,"g":1.0,"b":1.0,"a":1.0},{"r":1.0,"g":1.0,"b":1.0,"a":1.0},{"r":1.0,"g":1.0,"b":1.0,"a":1.0},{"r":1.0,"g":1.0,"b":1.0,"a":1.0}]}'
   - '{"m_Value":true,"fieldValues":[]}'
   - '{"m_Value":true,"fieldValues":[]}'
-  - '{"m_Value":true,"fieldValues":[]}'
+  - '{"m_Value":false}'
+  - '{"m_Value":false}'
+  - '{"m_Value":false}'
+  - '{"m_Value":false}'
   - '{"m_Value":false}'
   - '{"m_Value":false}'
   - '{"m_Value":false}'

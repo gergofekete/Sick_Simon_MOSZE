@@ -61,15 +61,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\EnemySpawnManager.cs" />
+    <Compile Include="Assets\Scripts\GameWin.cs" />
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\heart.cs" />
     <Compile Include="Assets\Scripts\MazeRenderer.cs" />
     <Compile Include="Assets\Scripts\ItemController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\EnemyAI.cs" />
+    <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\MazeGenerator.cs" />
     <Compile Include="Assets\Scripts\ItemSpawner.cs" />
+    <Compile Include="Assets\Scripts\InfoBack.cs" />
+    <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
   </ItemGroup>
   <ItemGroup>
