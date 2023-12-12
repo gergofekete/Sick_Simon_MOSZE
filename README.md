@@ -4,6 +4,9 @@
 Sick Simon egy 2D-s labirintus játék, amelyet C# nyelven és Unity motorral fejlesztettünk. A játék célja, hogy a játékos életben tartsa a karakterét különböző bosster itemek felvételével és meggyógyítsa
  teljesen a karaktert miközben sebző ellenségeket kerül el.
 
+## Futtatás
+A builds mappában található .exe file segítségével tudjuk futtatni a játékot.
+
 ## Kezdő lépések
 
 ### Előfeltételek
